@@ -1,0 +1,45 @@
+name: .NET CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        dotnet-version: ["10.0.x"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+      - name: Restore dependencies
+        run: dotnet restore src/SampleApp/SampleApp.csproj
+
+      - name: Build
+        run: dotnet build src/SampleApp/SampleApp.csproj --configuration Release --no-restore
+
+      - name: Run tests
+        run: |
+          dotnet test tests/SampleApp.Tests/SampleApp.Tests.csproj \
+            --configuration Release --no-build --verbosity normal
+
+      # optional: publish artifacts
+      - name: Publish artifact
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: sampleapp
+          path: src/SampleApp/bin/Release/net10.0

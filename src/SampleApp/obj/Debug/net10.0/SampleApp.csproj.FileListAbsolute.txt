@@ -1,0 +1,15 @@
+/workspaces/github-actions-learn/src/SampleApp/bin/Debug/net10.0/SampleApp
+/workspaces/github-actions-learn/src/SampleApp/bin/Debug/net10.0/SampleApp.deps.json
+/workspaces/github-actions-learn/src/SampleApp/bin/Debug/net10.0/SampleApp.runtimeconfig.json
+/workspaces/github-actions-learn/src/SampleApp/bin/Debug/net10.0/SampleApp.dll
+/workspaces/github-actions-learn/src/SampleApp/bin/Debug/net10.0/SampleApp.pdb
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.AssemblyInfoInputs.cache
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.AssemblyInfo.cs
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.csproj.CoreCompileInputs.cache
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.sourcelink.json
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.dll
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/refint/SampleApp.dll
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.pdb
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/SampleApp.genruntimeconfig.cache
+/workspaces/github-actions-learn/src/SampleApp/obj/Debug/net10.0/ref/SampleApp.dll
