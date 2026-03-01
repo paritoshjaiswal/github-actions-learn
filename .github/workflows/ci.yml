@@ -39,7 +39,7 @@ jobs:
       # optional: publish artifacts
       - name: Publish artifact
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sampleapp
           path: src/SampleApp/bin/Release/net10.0
